@@ -24,6 +24,11 @@
         "{workspaceRoot}/.eslintignore",
         "{workspaceRoot}/eslint.config.mjs"
       ]
+    },
+    "@nx/angular:ng-packagr-lite": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "generators": {
@@ -35,10 +40,11 @@
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "none"
+      "unitTestRunner": "none",
+      "directory": "libs"
     },
     "@nx/angular:component": {
-      "style": "css"
+      "style": "scss"
     }
   }
 }

@@ -6,52 +6,10 @@
   "sourceRoot": "apps/trivias/src",
   "tags": [],
   "targets": {
-    "IonServe": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "nx build trivias && npx cap sync && npx cap copy"
-      }
-    },
     "capBuildSyncCopy": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "nx build trivias && npx cap sync && npx cap copy"
-      }
-    },
-    "capSync": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "npx cap sync"
-      }
-    },
-    "capCopy": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "npx cap copy"
-      }
-    },
-    "capOpenAndroid": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "npx cap open android"
-      }
-    },
-    "capOpenIos": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "npx cap open ios"
-      }
-    },
-    "capDevAndroid": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "npm run trivias:dev:android"
-      }
-    },
-    "capDevIos": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "npm run trivias:dev:ios"
+        "command": "nx build trivias && npx cap sync && npx cap copy && npx cap open android"
       }
     },
     "build": {

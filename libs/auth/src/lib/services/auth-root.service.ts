@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import {
   Auth,
   signInWithEmailAndPassword,
@@ -10,11 +10,10 @@ import {
   onAuthStateChanged,
   User,
 } from '@angular/fire/auth';
-import { inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
-export class AuthService {
+export class AuthRootService {
   private auth = inject(Auth);
 
   login(email: string, password: string) {
