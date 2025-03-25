@@ -46,5 +46,6 @@
     "@nx/angular:component": {
       "style": "scss"
     }
-  }
+  },
+  "plugins": ["@nxext/capacitor/plugin"]
 }

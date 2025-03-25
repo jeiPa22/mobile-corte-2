@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/prefer-standalone */
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthFacade } from '../../+state/auth/auth.facade';
@@ -6,6 +7,7 @@ import { AuthFacade } from '../../+state/auth/auth.facade';
   selector: 'lib-auth-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
+  standalone: false,
 })
 export class RegisterComponent {
   form: FormGroup;

@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/prefer-standalone */
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthFacade } from '../../+state/auth/auth.facade';
@@ -6,6 +7,7 @@ import { AuthFacade } from '../../+state/auth/auth.facade';
   selector: 'lib-auth-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
+  standalone: false,
 })
 export class LoginComponent {
   form: FormGroup;

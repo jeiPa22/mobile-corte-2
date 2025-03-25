@@ -41,3 +41,5 @@ export const authReducer = createReducer(
   ),
   on(AuthActions.logout, (state) => ({ ...state, user: null }))
 );
+
+export const AUTH_FEATURE_KEY = 'auth'; // asegúrate de exportar esta constante
