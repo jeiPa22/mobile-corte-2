@@ -1,0 +1,7 @@
+{
+  "name": "trivias",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
